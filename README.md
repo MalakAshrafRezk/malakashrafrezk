@@ -31,6 +31,12 @@ You give it a board, it figures out how to turn all the lights off.
 
 ---
 
+## 🎓 Education
+
+- **Faculty of Computers and Data Science**, Alexandria University
+
+---
+
 ## 🎓 Courses
 
 - Software Testing Track — **Digital Egypt Pioneers (DEPI)**
