@@ -65,7 +65,7 @@ You give it a board, it figures out how to turn all the lights off.
 ## 🌐 Live Site
 
 View the portfolio here:  
-👉🏻 [https://malakashrafrezk.github.io/portfolio](https://malakashrafrezk.github.io/portfolio)
+👉🏻 [https://malakashrafrezk.github.io/portfolio](https://github.com/malakashrafrezk/malakashrafrezk)
 
 ---
 
