@@ -1,131 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
-  <title>Malak Ashraf | Software Testing Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    .animate {
-      animation: fadeInUp 0.6s ease-out;
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .btn-cv {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #2a2eec;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-    .btn-cv:hover {
-      background-color: #1d1fb3;
-    }
-  </style>
-</head>
-<body>
-  <header class="hero animate">
-    <div class="container">
-      <img src="Malak.jpg" alt="Malak Ashraf" class="profile-img" />
-      <h1 class="main-name">Malak Ashraf</h1>
-      <p class="job-title">Software Testing Engineer | Automation & QA Enthusiast</p>
-      <p class="intro">Helping software teams deliver better products by finding bugs before users do.</p>
-      <a href="cv.pdf" class="btn-cv" download>Download My CV</a>
-    </div>
-  </header>
+html {
+  scroll-behavior: smooth;
+}
 
-  <section class="about animate">
-    <h2>About Me</h2>
-    <p>
-      I’m a Software Testing Engineer based in Alexandria, Egypt. I enjoy solving real-world problems,
-      discovering bugs, and building reliable, well-structured code. I'm currently exploring automation tools
-      and enjoy working on logic-based challenges and AI solutions.
-    </p>
-  </section>
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fbff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
 
-  <section class="skills animate">
-    <h2>Skills</h2>
-    <h3>Hard Skills</h3>
-    <ul>
-      <li>Java</li>
-      <li>Python</li>
-      <li>C++</li>
-      <li>OOP</li>
-      <li>Data Structures & Algorithms</li>
-      <li>Software Testing</li>
-      <li>Bug Reporting</li>
-      <li>Java Swing</li>
-      <li>Linux</li>
-      <li>AI Logic</li>
-    </ul>
-    <h3>Soft Skills</h3>
-    <ul>
-      <li>Problem-Solving</li>
-      <li>Critical Thinking</li>
-      <li>Communication</li>
-      <li>Teamwork</li>
-      <li>Fast Learning</li>
-    </ul>
-  </section>
+.hero {
+  background: linear-gradient(120deg, #dbeafe, #eff6ff);
+  padding: 60px 20px;
+  text-align: center;
+}
 
-  <section class="projects animate">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Flight Booking System (Java)</h3>
-      <p>A desktop app built with Java Swing. Includes admin/user roles and file handling for simulating real-world booking operations.</p>
-    </div>
-    <div class="project">
-      <h3>University Management System (Python)</h3>
-      <p>Console-based academic system using linked lists, stacks, and sorting.</p>
-    </div>
-    <div class="project">
-      <h3>Lights Out Solver (Python + AI)</h3>
-      <p>Solves Lights Out grid configurations using logic and AI search techniques.</p>
-    </div>
-  </section>
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
 
-  <section class="education animate">
-    <h2>Education</h2>
-    <p><strong>Faculty of Computers and Data Science</strong>, Alexandria University</p>
-  </section>
+.main-name {
+  font-size: 2.5rem;
+  color: #1d4ed8;
+  font-weight: 700;
+}
 
-  <section class="courses animate">
-    <h2>Courses</h2>
-    <ul>
-      <li>Software Testing Track — Digital Egypt Pioneers (DEPI)</li>
-      <li>Software Testing Course — Mahara Tech</li>
-    </ul>
-  </section>
+.job-title {
+  font-size: 1.1rem;
+  color: #3b82f6;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 
-  <section class="contact animate">
-    <h2>Contact</h2>
-    <p>You can reach me here:</p>
-    <ul>
-      <li>Email: <a href="mailto:malakashrafrezk@gmail.com">malakashrafrezk@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/malakashrafrezk" target="_blank" rel="noopener noreferrer">linkedin.com/in/malakashrafrezk</a></li>
-    </ul>
-  </section>
+.intro {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: auto;
+}
 
-  <footer class="animate">
-    <p>&copy; 2025 Malak Ashraf. All rights reserved. | Powered by Angel 🪽</p>
-  </footer>
-</body>
-</html>
+section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #1f2937;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.project {
+  background-color: #eff6ff;
+  padding: 15px;
+  border-left: 4px solid #3b82f6;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #dbeafe;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+.animate {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-name {
+    font-size: 2rem;
+  }
+  .job-title {
+    font-size: 1rem;
+  }
+  .intro {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+  section {
+    padding: 30px 15px;
+  }
+  .project {
+    font-size: 0.95rem;
+  }
+}
