@@ -2,12 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
   <title>Malak Ashraf | Software Testing Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .animate {
+      animation: fadeInUp 0.6s ease-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
+  <header class="hero animate">
     <div class="container">
       <img src="Malak.jpg" alt="Malak Ashraf" class="profile-img" />
       <h1 class="main-name">Malak Ashraf</h1>
@@ -16,7 +37,7 @@
     </div>
   </header>
 
-  <section class="about">
+  <section class="about animate">
     <h2>About Me</h2>
     <p>
       I’m a Software Testing Engineer based in Alexandria, Egypt. I enjoy solving real-world problems,
@@ -25,9 +46,9 @@
     </p>
   </section>
 
-  <section class="skills">
+  <section class="skills animate">
     <h2>Skills</h2>
-    <h3>Technical</h3>
+    <h3>Hard Skills</h3>
     <ul>
       <li>Java</li>
       <li>Python</li>
@@ -40,7 +61,7 @@
       <li>Linux</li>
       <li>AI Logic</li>
     </ul>
-    <h3>Soft</h3>
+    <h3>Soft Skills</h3>
     <ul>
       <li>Problem-Solving</li>
       <li>Critical Thinking</li>
@@ -50,7 +71,7 @@
     </ul>
   </section>
 
-  <section class="projects">
+  <section class="projects animate">
     <h2>Projects</h2>
     <div class="project">
       <h3>Flight Booking System (Java)</h3>
@@ -66,12 +87,12 @@
     </div>
   </section>
 
-  <section class="education">
+  <section class="education animate">
     <h2>Education</h2>
     <p><strong>Faculty of Computers and Data Science</strong>, Alexandria University</p>
   </section>
 
-  <section class="courses">
+  <section class="courses animate">
     <h2>Courses</h2>
     <ul>
       <li>Software Testing Track — Digital Egypt Pioneers (DEPI)</li>
@@ -79,16 +100,16 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section class="contact animate">
     <h2>Contact</h2>
     <p>You can reach me here:</p>
     <ul>
       <li>Email: <a href="mailto:malakashrafrezk@gmail.com">malakashrafrezk@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/malakashrafrezk" target="_blank">linkedin.com/in/malakashrafrezk</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/malakashrafrezk" target="_blank" rel="noopener noreferrer">linkedin.com/in/malakashrafrezk</a></li>
     </ul>
   </section>
 
-  <footer>
+  <footer class="animate">
     <p>&copy; 2025 Malak Ashraf. All rights reserved.</p>
   </footer>
 </body>
