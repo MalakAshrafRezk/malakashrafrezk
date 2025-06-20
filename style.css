@@ -4,92 +4,102 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f8fbff;
-  color: #222;
+  background-color: #f4f8fc;
+  color: #1a1a1a;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 16px;
 }
 
 .hero {
-  background: linear-gradient(120deg, #dbeafe, #eff6ff);
-  padding: 60px 20px;
+  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+  padding: 80px 20px;
   text-align: center;
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
 .main-name {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #1d4ed8;
   font-weight: 700;
+  margin: 10px 0;
 }
 
 .job-title {
-  font-size: 1.1rem;
-  color: #3b82f6;
+  font-size: 1.2rem;
+  color: #2563eb;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .intro {
   font-size: 1rem;
-  color: #333;
+  color: #374151;
   max-width: 600px;
-  margin: auto;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 section {
-  padding: 50px 20px;
-  max-width: 800px;
+  padding: 60px 25px;
+  max-width: 850px;
   margin: auto;
   background-color: #ffffff;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.03);
 }
 
 h2 {
-  color: #1e3a8a;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  color: #1e40af;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 h3 {
-  color: #1f2937;
-  margin-top: 20px;
-  font-size: 1.2rem;
+  color: #111827;
+  margin-top: 25px;
+  font-size: 1.25rem;
 }
 
 ul {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 ul li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .project {
-  background-color: #eff6ff;
-  padding: 15px;
-  border-left: 4px solid #3b82f6;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  background-color: #f0f9ff;
+  padding: 20px;
+  border-left: 5px solid #3b82f6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px 15px;
   background-color: #dbeafe;
-  color: #1a1a1a;
-  font-size: 14px;
+  color: #1f2937;
+  font-size: 15px;
 }
 
 .animate {
@@ -99,7 +109,7 @@ footer {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(25px);
   }
   to {
     opacity: 1;
@@ -107,21 +117,31 @@ footer {
   }
 }
 
+/* Contact Icons */
+.contact i {
+  margin-right: 8px;
+  color: #2563eb;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .main-name {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
+
   .job-title {
     font-size: 1rem;
   }
+
   .intro {
     font-size: 0.95rem;
     padding: 0 10px;
   }
+
   section {
-    padding: 30px 15px;
+    padding: 35px 20px;
   }
+
   .project {
     font-size: 0.95rem;
   }
