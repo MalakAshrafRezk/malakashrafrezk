@@ -1,59 +1,110 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9fb;
-  color: #1e1e1e;
+/* === Reset + Base === */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+  background-color: #f8fbff;
+  color: #1a1a1a;
   line-height: 1.6;
 }
 
+/* === Hero Section === */
 header.hero {
-  background-color: #4b3f72;
-  color: white;
-  padding: 60px 20px;
+  background: linear-gradient(to right, #2a2eec, #5cb6f9);
+  color: #fff;
+  padding: 80px 20px 60px;
   text-align: center;
 }
 
 .profile-img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin: 20px auto;
-  display: block;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
+.main-name {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.intro {
+  margin-top: 15px;
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+/* === Layout Sections === */
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
   max-width: 800px;
   margin: auto;
 }
 
-h1, h2 {
-  color: #4b3f72;
+h2 {
+  font-size: 26px;
+  color: #2a2eec;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 14px 0 8px;
 }
 
 ul {
-  list-style-type: square;
   padding-left: 20px;
-}
-
-.project {
-  background-color: #e0d4f7;
-  padding: 15px;
-  border-radius: 8px;
   margin-bottom: 20px;
 }
 
-a {
-  color: #4b3f72;
-  text-decoration: none;
+ul li {
+  margin-bottom: 6px;
 }
 
+.project {
+  background-color: #eaf4ff;
+  padding: 15px;
+  border-left: 4px solid #5cb6f9;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.project:hover {
+  background-color: #d8ecff;
+}
+
+/* === Contact Links === */
+a {
+  color: #2a2eec;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #174cd3;
+  text-decoration: underline;
+}
+
+/* === Footer === */
 footer {
   text-align: center;
+  background-color: #f0f4fa;
   padding: 20px;
-  background-color: #f1f1f1;
   font-size: 14px;
+  color: #555;
 }
