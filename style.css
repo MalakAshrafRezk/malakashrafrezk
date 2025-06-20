@@ -92,9 +92,8 @@ a:hover {
   transform: translateY(-2px);
 }
 
-ul li i {
-  color: #2563eb;
-  margin-right: 8px;
+ul li svg {
+  vertical-align: middle;
 }
 
 .project {
