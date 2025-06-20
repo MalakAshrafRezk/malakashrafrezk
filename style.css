@@ -1,14 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f0f6ff;
-  color: #1a1a1a;
+  background-color: #f8fbff;
+  color: #222;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
 .hero {
-  background-color: #e0ecff;
+  background: linear-gradient(120deg, #dbeafe, #eff6ff);
   padding: 60px 20px;
   text-align: center;
 }
@@ -23,37 +27,23 @@ body {
 }
 
 .main-name {
-  font-size: 36px;
-  color: #1e3a8a;
+  font-size: 2.5rem;
+  color: #1d4ed8;
   font-weight: 700;
 }
 
 .job-title {
-  font-size: 18px;
-  color: #2563eb;
+  font-size: 1.1rem;
+  color: #3b82f6;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .intro {
-  font-size: 16px;
-  color: #1a1a1a;
-}
-
-.btn-cv {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #3b82f6;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.btn-cv:hover {
-  background-color: #2563eb;
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: auto;
 }
 
 section {
@@ -63,16 +53,19 @@ section {
   background-color: #ffffff;
   margin-bottom: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
   color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 h3 {
-  color: #1a1a1a;
+  color: #1f2937;
   margin-top: 20px;
+  font-size: 1.2rem;
 }
 
 ul {
@@ -80,11 +73,11 @@ ul {
 }
 
 ul li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .project {
-  background-color: #f1f7ff;
+  background-color: #eff6ff;
   padding: 15px;
   border-left: 4px solid #3b82f6;
   border-radius: 5px;
@@ -94,7 +87,7 @@ ul li {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #e0ecff;
+  background-color: #dbeafe;
   color: #1a1a1a;
   font-size: 14px;
 }
@@ -111,5 +104,25 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-name {
+    font-size: 2rem;
+  }
+  .job-title {
+    font-size: 1rem;
+  }
+  .intro {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+  section {
+    padding: 30px 15px;
+  }
+  .project {
+    font-size: 0.95rem;
   }
 }
