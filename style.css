@@ -80,6 +80,23 @@ ul li {
   margin-bottom: 10px;
 }
 
+/* Links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: #1e40af;
+  transform: translateY(-2px);
+}
+
+ul li i {
+  color: #2563eb;
+  margin-right: 8px;
+}
+
 .project {
   background-color: #f0f9ff;
   padding: 20px;
@@ -100,27 +117,25 @@ footer {
   background-color: #dbeafe;
   color: #1f2937;
   font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
+/* Animation */
 .animate {
-  animation: fadeInUp 0.6s ease-out;
+  opacity: 0;
+  animation: fadeInUp 0.7s ease-out forwards;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Contact Icons */
-.contact i {
-  margin-right: 8px;
-  color: #2563eb;
 }
 
 /* Responsive */
