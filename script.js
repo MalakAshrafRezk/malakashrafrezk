@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll(".animate");//sc
+  const sections = document.querySelectorAll(".animate");
   const projects = document.querySelectorAll(".project");
   const links = document.querySelectorAll("a");
 
