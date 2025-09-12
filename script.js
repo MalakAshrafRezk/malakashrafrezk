@@ -1,4 +1,3 @@
-// ===== Typewriter Effect for Hero Name =====
 const typeText = "Malak Ashraf";
 let i = 0;
 function typeWriter() {
@@ -10,7 +9,6 @@ function typeWriter() {
 }
 document.addEventListener("DOMContentLoaded", typeWriter);
 
-// ===== Scroll Animations for Sections =====
 const sections = document.querySelectorAll("section");
 const observer = new IntersectionObserver((entries, obs)=>{
   entries.forEach(entry=>{
@@ -22,7 +20,6 @@ const observer = new IntersectionObserver((entries, obs)=>{
 },{threshold:0.1});
 sections.forEach(sec => observer.observe(sec));
 
-// ===== Back to Top Button =====
 const backToTop = document.getElementById("backToTop");
 window.addEventListener("scroll",()=>{
   backToTop.style.display = window.scrollY > 300 ? "block" : "none";
@@ -31,7 +28,6 @@ backToTop.addEventListener("click", () => {
   window.scrollTo({top: 0, behavior: "smooth"});
 });
 
-// ===== Project Cards Hover 3D Effect =====
 const projectCards = document.querySelectorAll(".project-card");
 projectCards.forEach(card=>{
   card.addEventListener("mousemove", e => {
@@ -49,7 +45,6 @@ projectCards.forEach(card=>{
   });
 });
 
-// ===== Buttons Hover Glow Effect =====
 const buttons = document.querySelectorAll(".btn");
 buttons.forEach(btn => {
   btn.addEventListener("mouseenter", () => {
