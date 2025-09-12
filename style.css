@@ -1,118 +1,145 @@
+/* General */
 body, html {
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-  background-color: #f4f8fc;
-  color: #1a1a1a;
+  background-color: #0f172a;
+  color: #f8fafc;
 }
 
+a { text-decoration: none; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 15px;
+  background: linear-gradient(135deg,#3b82f6,#9333ea);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(147,51,234,0.4);
+}
+
+/* Hero */
 .hero {
-  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
+  background: linear-gradient(135deg,#1e3a8a,#7c3aed);
   position: relative;
+  overflow: hidden;
 }
 
 .profile-img {
-  width: 140px;
-  height: 140px;
+  width: 150px; height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-  transition: transform 0.4s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  transition: transform 0.5s ease;
 }
 
 .profile-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1) rotate(-3deg);
 }
 
 h1.main-name {
-  font-size: 2.8rem;
-  color: #1d4ed8;
-  margin: 10px 0;
+  font-size: 3rem;
+  margin: 20px 0;
+  color: #fff;
 }
 
-h2 {
-  text-align: center;
-  color: #1e40af;
-  font-size: 2rem;
-  margin-bottom: 25px;
-}
-
-h3 {
-  color: #111827;
-  margin-top: 20px;
-}
-
+/* Sections */
 section {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 50px 25px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 3px 18px rgba(0,0,0,0.03);
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 50px 30px;
+  background: #1e293b;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
 }
 
+section h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+/* Projects Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 25px;
 }
 
 .project-card {
-  background: #f0f9ff;
-  padding: 20px;
-  border-left: 5px solid #3b82f6;
-  border-radius: 10px;
+  background: linear-gradient(135deg,#334155,#1e293b);
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   cursor: pointer;
-  transition: all 0.4s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-6px) rotate(-1deg);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  background: linear-gradient(135deg,#bfdbfe,#e0f2fe);
+  transform: perspective(600px) rotateY(5deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(147,51,234,0.6);
 }
 
-ul li {
-  margin-bottom: 10px;
+/* Education & Courses */
+.education, .courses {
+  background: linear-gradient(135deg,#1e293b,#334155);
+  border-radius: 20px;
+  padding: 50px 30px;
+  margin: 50px auto;
+  max-width: 1000px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
 }
 
-a {
-  color: #2563eb;
-  text-decoration: none;
-  transition: transform 0.2s ease, color 0.2s ease;
+.courses ul, .education ul {
+  list-style: inside disc;
+  margin-top: 20px;
+  padding-left: 15px;
 }
 
-a:hover {
-  transform: scale(1.1) translateY(-2px);
-  color: #1e40af;
+/* Contact Buttons */
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
+/* Back to Top Button */
+#backToTop {
+  position: fixed; bottom: 25px; right: 25px;
+  width: 55px; height: 55px; border:none; border-radius:50%;
+  background:#9333ea; color:#fff; font-size:28px; cursor:pointer;
+  display:none; z-index:999; box-shadow:0 6px 20px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+  transform: scale(1.1);
+  background:#7c3aed;
+}
+
+/* Animate when in view */
 .fade-in {
   opacity: 1 !important;
   transform: translateY(0) !important;
-  transition: all 0.6s ease-out;
-}
-
-.animate {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 25px 15px;
-  background-color: #dbeafe;
-  color: #1f2937;
-  font-size: 15px;
 }
 
 /* Responsive */
 @media(max-width:768px){
-  .main-name { font-size: 2.1rem; }
+  h1.main-name { font-size: 2.2rem; }
   section { padding: 35px 20px; }
+  .projects-grid { gap: 15px; }
 }
