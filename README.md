@@ -1,103 +1,64 @@
-# Malak Ashraf 👩🏻‍💻
+# Hi there, I'm Malak Ashraf
 
-Helping software teams deliver better products by finding bugs before users do.  
-I'm Malak, a Software Testing Engineer with a passion for solving real-world problems, discovering bugs, and building reliable, well-structured code. ✨
+### Cybersecurity Enthusiast & Passionate Learner | 2rd Year Cybersecurity Student
 
-This is my personal portfolio, where I share the projects I've worked on, the skills I’ve built, and my journey in tech.
-
----
-
-## ✨ About Me
-
-- 💻 Comfortable with **Java**, **Python**, and **C++**
-- 🔧 Strong in **Object-Oriented Programming** and **Data Structures**
-- 🎯 Focused on **software testing**, and currently exploring **automation tools and techniques**
-- 🧠 Enjoy logic-based challenges and developing AI-based solutions
-- 🫱🏻‍🫲🏻 Volunteer with **Google Developer Groups (GDG)**
-- 🌍 Based in **Alexandria, Egypt**
+Helping teams build secure software environments by breaking into systems before the bad actors do. I bridge the gap between rigorous **Software Testing** and **Offensive Security Analysis**, driven by low-level curiosity, dynamic problem-solving, and a persistent hacker mindset.
 
 ---
 
-## 🛠 Skills
+## About Me
 
-**Technical Skills:**  
-Java, Python, C++, OOP, Data Structures, Algorithms, Software Testing, Test Case Writing, Bug Reporting, Java Swing, AI Search Techniques, Linux
-
-**Soft Skills:**  
-Problem-Solving, Critical Thinking, Communication, Teamwork, Time Management, Fast Learning, Attention to Detail
-
----
-
-## ✨ Projects
-
-### 💻 Inventory Management System
-
-Developed an inventory management system in Java for electronic products like laptops, tablets, and smartphones. The project was built from scratch as a personal challenge to apply object-oriented programming concepts in a real-world context.
-
-The system supports product addition, name-based search, alphabetical sorting, stock tracking, and discount application, all through a user-friendly console interface.
-
-I focused on writing clean and reusable code using interfaces, handling invalid input smoothly, and thinking from the user’s perspective to make the experience as intuitive as possible.
-
-This project helped me strengthen my logic-building, debugging, and system design skills while working independently from start to finish.
-
-### ✈️ Flight Booking Management System
-
-Designed and developed a role-based flight booking system simulating real-world travel agency operations. The system features user authentication, flight and booking management, and payment simulation using Java.
-
-This project was built with strong Object-Oriented Programming principles, including inheritance, encapsulation, polymorphism, and abstraction. It offers distinct functionalities for customers, agents, and administrators, and handles tasks like managing user profiles, searching flights, booking creation, and itinerary generation.
-
-Used file-based data persistence and followed clean code practices to ensure modular, scalable, and maintainable architecture.
-
-### 🏫 University Course Registration System
-
-Designed and developed a custom University Registration System using manual linked list structures to manage students, courses, and enrollments without relying on built-in Java collections.
-
-The system supports full student/course management, dynamic enrollment, sorting, and includes an undo/redo mechanism for enrollment actions using stacks.
-
-Key features include:
-
--Manual implementation of singly linked lists for both students and courses
-
--Bidirectional enrollment tracking between students and courses
-
--Custom sorting algorithms for enrolled data
-
--Console-based UI with validation and clear user flow
-
--Undo/Redo functionality using stack data structures
-
-### 🔲 Lights Out Game Solver
-Developed a graphical Lights Out Game Solver that integrates a Breadth-First Search (BFS) algorithm to compute the optimal solution path. The user can manually play the game or visualize the automated solver in action.
-
-Implemented a clean and responsive GUI using Tkinter, with a real-time animation of solution steps. Employed threading to ensure smooth execution without freezing the interface.
+-  **Academic Journey:** 2rd Year Cybersecurity Student at the Faculty of Computers and Data Science, Alexandria University (Expected Graduation: 2028).
+-  **Hands-on Hacking:** Ranked in the **Top 15% globally on TryHackMe**, with a strong focus on Network Security, API exploitation, and Linux structures.
+- **The Testing Edge:** Distinguished Graduate and recognized as a **Top Student** in the 6-month intensive Software Testing Track under the Digital Egypt Pioneers Initiative (DEPI).
+-  **Competitive Programmer:** Active problem solver mainly using C++ for advanced algorithms and data structures.
+-  **Based in:** Alexandria, Egypt.
 
 ---
 
-## 🎓 Education
+## Cyber & Dev Toolkit
 
-- **Faculty of Computers and Data Science**, Alexandria University
-
----
-
-## 📚 Courses
-
-- Software Testing Track — **Digital Egypt Pioneers (DEPI)**
-- Software Testing Course — **Mahara Tech**
+| Focus Area | Technologies & Tools |
+| :--- | :--- |
+| **Security & Operations** | Linux Internals, Network Infrastructure (NTI Certified - 97.5%), Wireshark, Burp Suite, Bash |
+| **Methodologies & Frameworks** | OWASP Top 10 (Web/API), Penetration Testing, Manual & Automation Testing, Page Object Model (POM) |
+| **Programming & Scripting** | C++, Python, Java, JavaScript, Selenium |
+| **Cloud Computing** | Huawei Cloud Certified, AWS Cloud Foundations (In Progress) |
 
 ---
 
-## 📫 Contact
+## Featured Projects
 
-- 📧 Email: malakashrafrezk@gmail.com  
-- 💼 LinkedIn: [linkedin.com/in/malakashrafrezk](https://www.linkedin.com/in/malakashrafrezk)
+### Vulnerable Lab Design: Insecure Direct Object References (IDOR)
+*Developed an educational, end-to-end vulnerable lab outline demonstrating horizontal privilege escalation.*
+- **The Core:** Built a vulnerable backend API endpoint using **Python (Flask)** and SQLite to simulate medical record leaks.
+- **The Fix:** Implemented secure Object-Level Access Control verification using state-managed authentication middleware and secured queries against secondary injections.
+
+### Custom Linux Command-Line Shell
+*Engineered a low-level custom Unix CLI shell from scratch using C to understand operating system boundaries.*
+- **System Internals:** Handled dynamic process spawning, core OS environment variables, and memory space isolation.
+- **Advanced I/O:** Integrated advanced redirection (`<`, `>`), asynchronous background cleanup via `waitpid()`, and optimized dynamic memory allocation to achieve **0% memory leaks**.
+
+### Enterprise Quality Assurance Framework (OrangeHRM Demo)
+*Co-developed a highly scalable automated regression testing pipeline for an enterprise environment during the DEPI Capstone.*
+- **Architecture:** Applied the **Page Object Model (POM)** architectural pattern using **Java and Selenium**.
+- **Impact:** Combined comprehensive manual boundary analysis with robust automated suites to identify architectural bugs early in the delivery pipeline.
 
 ---
 
-## 🌐 Live Site
+## Education & Technical Credentials
 
-View the portfolio here:  
-👉🏻 [https://malakashrafrezk.github.io/portfolio](https://github.com/malakashrafrezk/malakashrafrezk)
+- **Faculty of Computer and Data Science (Cybersecurity Major)** — Alexandria University 
+- **Software Testing Track (6-Month Intensive)** — Digital Egypt Pioneers Initiative (DEPI) | *Awarded Top Student Distinction*
+- **120-Hour Network Infrastructure Program** — National Telecommunication Institute (NTI) | *Final Score: 97.5%*
+- **Pre-Security Learning Path** — TryHackMe Certification
 
 ---
 
-Thank you for visiting. For any inquiries, feel free to get in touch. 🖤
+## Let's Connect & Collaborate!
+
+-  **LinkedIn:** [linkedin.com/in/malakashrafrezk](https://www.linkedin.com/in/malakashrafrezk)
+- **Email:** [malakashrafrezk@gmail.com](mailto:malakashrafrezk@gmail.com)
+
+---
+"The secure code of today is the attack surface of tomorrow. Keep scanning, keep testing."
